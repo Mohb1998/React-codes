@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+
+        <!-- fieldset draws the outline of the table -->
+        <fieldset>
+
+            <!-- The legend is the title of the table -->
+            <legend>Favorite</legend>
+            <div>Color</div>
+
+            <div>
+                <!-- Here we specify a list and use it as the id for the datalist -->
+                <input list="color-list" type="text">
+                <datalist id="color-list">
+                    <option value="Red"></option>
+                    <option value="Green"></option>
+                    <option value="Blue"></option>
+                    <option value="Yellow"></option>
+                    <option value="Orange"></option>
+                </datalist>
+
+                <!-- Simple tag to choose a color -->
+                <input type="color" name="" id="">
+
+                <!-- Simple tag to choose a time -->
+                <input type="time" name="" id="">
+                <br>
+                <label for="">File upload</label>
+
+                <!-- Simple tag to show a progress bar -->
+                <progress value="20" max="100">
+
+                </progress>
+
+            </div>
+        </fieldset>
+    </form>
+
+    <div>
+
+        <!-- The sub and sup elements help to create exponents and subs -->
+        <p>H<sub>2</sub>O</p>
+        <p>X^<sup>5</sup></p>
+    </div>
+
+    <div>
+        <!-- Templates are accessed through javascript and can be used to
+        appear and dissapear text -->
+        <template>
+            This is a template
+        </template>
+    </div>
+
+    <script>
+        const template = document.querySelector('template')
+        const content = template.content.cloneNode(true)
+        document.body.append(content)
+    </script>
+
+</body>
+
+</html>

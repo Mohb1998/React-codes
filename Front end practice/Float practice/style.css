@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+    color :white;
+    border-radius: 10px;
+}
+
+header{
+    background-color: #333333;
+    padding: 30px 0;
+}
+
+aside, main{
+    float: left;
+}
+
+aside{
+    background-color: orangered;
+    width: 30%;
+    height: 600px;
+}
+
+main{
+    background-color: #777777;
+    width: 70%;
+    height: 600px;
+}
+
+footer{
+    background-color: #333333;
+    padding: 30px 0;
+}

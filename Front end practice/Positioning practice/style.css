@@ -1,0 +1,65 @@
+* {
+    color: white;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+/* body{
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+h2 {
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+h3 {
+    background-color: crimson;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+h1, h2, h3 {
+    border: 2px solid yellow;
+    display: inline;
+} */
+
+/* .div1, .div2, .div3{
+    border-radius: 10px;
+} */
+
+.div1{
+    background-color: red;
+    padding: 60px;
+    position: relative;
+    z-index: -1;
+}
+
+.div2{
+    background-color: blue;
+    padding: 40px;
+    position: relative;
+    bottom: 150px;
+    z-index: 1;
+}
+
+.div3{
+    background-color: yellow;
+    padding: 30px;
+    position: relative;
+    bottom: 250px;
+    z-index: 2;
+}
+

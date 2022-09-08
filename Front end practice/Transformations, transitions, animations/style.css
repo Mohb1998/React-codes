@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    background-color: #2d2d2d;
+}
+
+/*Animations*/
+/*Choose a name*/
+@keyframes myAnimation {
+    /*Set the number of points in this case we have 5 points*/
+
+    0% {transform: translate(0,0);}
+    20% {transform: translate(100px, 0);}
+    40% {transform: translate(100px, 100px);}
+    60% {transform: translate(0, 100px);}
+    100% {transform: translate(0,0);}
+
+}
+
+
+.child {
+    color: red;
+    background-color: white;
+    font-weight: 700;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    padding: 50px;
+    margin: 30px auto;
+    font-size: 30px;
+
+    /*Transform properties*/
+    /*1- Rotate*/
+    /*The rotate property allows you to rotate an element but you must write (deg) attached to the number */
+    /* transform: rotate(40deg); */
+
+    /*2-Scale*/
+    /*The scale() property has 2 values (x,y) numbers smaller than 1 will shrink while 
+    numbers greater than 1 will expand*/
+    /* transform: scale(2,2); */
+
+    /*3-translate*/
+    /*the translate() property allows to move an object in the X(LtR) and Y(UtD)*/
+    /* transform: translate(500px, 600px); */
+
+
+    /****************************************************************************************************/
+
+    /*Transitions properties*/
+    transition: 3s transform;
+
+    /*Animations*/
+    /*          name      duration loops*/
+    animation: myAnimation 3s 2; /*number of loops can be set to infinite*/
+
+}
+
+/*Best practice to put the transition in the main object not the hover*/
+.child:hover {
+    transform: rotate(360deg);
+}
+
+

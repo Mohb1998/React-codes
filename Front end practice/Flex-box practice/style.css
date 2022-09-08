@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: dimgray;
+    color: white;
+    border-radius: 5px;
+}
+
+.container {
+
+    /* The display flex will let you decide the direction of the children by setting flex-direction*/
+    /* but won't allo you to put anything next to it (block element)*/
+    /* To allow other items to be next to it use display: inline-flex*/
+    display: flex;
+    /* display: inline-flex; */
+
+    /* How the children will be displayed (x or y axis)*/
+    /* flex-direction: row; */
+
+    /* The flex wrap allows you to  put elements on a new line when there isn't enough space*/
+    /* flex-wrap: wrap; */
+ 
+    /* flex-wrap is a short hand for the above 2 codes*/
+    flex-flow: row nowrap;
+
+    /* helps in aligning the content inside the parent based on the primary direction*/
+    justify-content: center;
+
+    /* Works on the secondary direction to help allign the content in the parent*/
+    align-content: center;
+
+
+    border: 2px solid red;
+    /* padding: 5px; */
+    height: auto;
+    width: 300px;
+}
+
+.child {
+    font-size: 25px;
+    border: 2px solid red;
+    background-color:black;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 50px;
+    width: 200px;
+}
+
+.child {
+
+    /* If flex-grow is set to one it will take all remaining space*/
+    /* flex-grow: 1; */
+
+    /* If flex-shrink is set to one it will shrink the elements to fit in the parent*/
+    flex-shrink: 1; /*default*/
+}
